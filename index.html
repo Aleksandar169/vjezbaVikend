@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="forma">
     <form action="">
         <div class="left">
-        <label for="">Ocjena</label>
-        <input type="text" name="" id="">
+        <label for="ocjena">Ocjena</label>
+        <input type="text" name="" id="ocjena">
+        <p id="greskaOcjena"></p>
         <br>
-        <label for="">broj indeks: </label>
-        <input type="text" name="" id="">
+        <label for="brIndeksa">broj indeks: </label>
+        <input type="text" name="" id="brIndeksa">
+        <p id="greskaIndeks"></p>
         <br>
-        <label for="">redni broj izlazaka</label>
-       <select name="" id="">
+        <label for="selekt">redni broj izlazaka</label>
+       <select name="" id="selekt">
         <option value="1" >1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -24,21 +27,29 @@
        <br>
     </div>
     <div class="right">
-    <label for="">datum izlaska na ispit</label>
-    <input type="date">
+    <label for="date">datum izlaska na ispit</label>
+    <input type="date" id="date">
     <br>
-    <label for="">Rok: </label>
-    <input type="radio" id="prvi">
+    <label for="rok">Rok: </label>
+    <input type="radio" id="prvi" name="rok">
     <label for="prvi">januar</label>
-    <input type="radio" id="drugi">
+    <input type="radio" id="drugi" name="rok">
     <label for="drugi">april</label>
-    <input type="radio" id="treci">
+    <input type="radio" id="treci" name="rok">
     <label for="treci">jun</label>
     <br>
-    <input type="checkbox"> <label for="">polozio</label>
-    <button>posalji</button>
+    <input type="checkbox" id="chbox"> <label for="chBox">polozio</label>
+    <p id="greskaBox"></p>
+    <br>
+  
 </div>
-    </form>
+<button id="dugme">posalji</button>
 </div>
+<br>
+<form action="">
+    <label for="podaci">PodaciForme:</label>
+    <textarea name="" id="podaci" cols="30" rows="10"></textarea>
+</form>
+<script src="./index.js"></script>
 </body>
 </html>
